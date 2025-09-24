@@ -1,0 +1,162 @@
+/* ---------------- Dark Background ---------------- */
+body {
+    background-color: #101010;
+    color: #d4d4d4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------- Project Header ---------------- */
+.project-header {
+    background-color: #222222;  /* slightly different dark shade */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+/* ---------------- Dashboard Card ---------------- */
+.card {
+    background-color: #222222;
+    color: #d4d4d4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Add border around entire dashboard card */
+.card.p-4 {  /* subtle border color */
+    padding: 20px;
+}
+
+/* ---------------- Small Top-right Buttons ---------------- */
+.btn-fancy {
+    background-color: #3a3d41;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    padding: 5px 12px;
+}
+
+.btn-fancy:hover {
+    background-color: #505357;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* ---------------- Stats Cards ---------------- */
+.stat-card {
+    background-color: #2d2d2d;
+    color: #d4d4d4;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* ---------------- File List ---------------- */
+.list-group-item {
+    background-color: #3a3d41;
+    color: #d4d4d4;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.list-group-item:hover {
+    background-color: #505357;
+    transition: all 0.2s ease;
+}
+
+.list-group-item a.btn-fancy {
+    font-size: 0.8rem;
+}
+
+/* ---------------- Delete Button ---------------- */
+.btn-danger i {
+    pointer-events: none;
+    font-size: 1rem;
+}
+
+.btn-danger {
+    background-color: #3a3d41;
+    color: #ff4d4d; /* red icon */
+    border: 1px solid #3a3d41;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.btn-danger:hover {
+    background-color: #505357;
+    color: #ff4d4d;
+}
+
+/* ---------------- Progress Bar ---------------- */
+.progress {
+    background-color: #3a3d41;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background-color: #0078d7;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ---------------- Footer / Small Text ---------------- */
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* ---------------- Responsive tweaks ---------------- */
+@media (max-width: 576px) {
+    .stat-card h4 {
+        font-size: 1.2rem;
+    }
+    .btn-sm.btn-fancy {
+        padding: 4px 10px;
+    }
+}
+
+.logout-avatar {
+    width: 40px;              /* Fixed width */
+    height: 40px;             /* Fixed height */
+    min-width: 40px;          /* Prevent shrinking */
+    min-height: 40px;         /* Prevent shrinking */
+    border-radius: 50%;       /* Perfect circle */
+    background-color: #3a3d41; 
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    flex-shrink: 0;           /* Prevents flex container from shrinking */
+    transition: all 0.2s ease;
+}
+
+.logout-avatar:hover {
+    background-color: #505357;
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
